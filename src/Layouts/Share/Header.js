@@ -1,5 +1,4 @@
 import React from "react";
-import App from "../App";
 import {NavLink} from "react-router-dom";
 
 class Header extends React.Component{
@@ -10,7 +9,7 @@ class Header extends React.Component{
                 <div className="navbar navbar-dark navbar-expand-md bg-dark shadow-sm">
                     <div className="container d-flex justify-content-between">
                         <a href="#" className="navbar-brand d-flex align-items-center">
-                            <strong>Todo App</strong>
+                            <strong>Dashboard</strong>
                         </a>
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
