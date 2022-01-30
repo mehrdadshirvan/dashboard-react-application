@@ -38,7 +38,7 @@ class Login extends React.Component {
                                 <div className={`card-body`}>
                                     <h5 className="card-title">Login</h5>
                                     <hr/>
-                                    <form onSubmit={this.formHandler.bind(this)}>
+                                    <form method={'POST'} action={'#'} onSubmit={this.formHandler.bind(this)}>
                                         <div className="mb-3">
                                             <label htmlFor="exampleInputEmail1" className="form-label">
                                                 Email address
