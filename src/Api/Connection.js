@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-    baseURL : 'https://react-course-d7c8c.firebaseio.com',
+    baseURL : 'http://localhost/pickmap2/api/v1',
     timeout : 5000
 });
 
