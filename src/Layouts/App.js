@@ -7,10 +7,10 @@ import Header from './Share/Header';
 
 // imports Routes
 const Home = loadable(() => import('./../Pages/Home'))
-// const Login = loadable(() => import('./../Pages/Auth/Login'))
-// const About = loadable(() => import('./../Pages/other/About'))
-// const Contact = loadable(() => import('./../Pages/other/Contact'))
-// const NotFound = loadable(() => import('./../Pages/other/NotFound'))
+const Login = loadable(() => import('./../Pages/Auth/Login'))
+const About = loadable(() => import('./../Pages/other/About'))
+const Contact = loadable(() => import('./../Pages/other/Contact'))
+const NotFound = loadable(() => import('./../Pages/other/NotFound'))
 
 function App() {
 
