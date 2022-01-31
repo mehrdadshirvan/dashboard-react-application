@@ -11,7 +11,10 @@ class Login extends React.Component {
         e.preventDefault();
         // ajax
         if(this.state.email.length > 1) {
-            Connection.post(`/auth/login`)
+            Connection.post(`/user/login`,{
+                email: this.state.email,
+                password:  this.state.password
+            })
                 .then(response =>  console.log(response))
                 .catch(err => console.log(err))
             //
