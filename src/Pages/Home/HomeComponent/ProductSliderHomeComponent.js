@@ -44,6 +44,12 @@ function ProductSliderHomeComponent(props){
             image_url: "https://www.rosena.ir/public/files/product/%D8%A2%D8%B1%D8%A7%DB%8C%D8%B4%20%D8%B5%D9%88%D8%B1%D8%AA/%D8%B1%DB%8C%D9%85%D9%84/4238698.jpg",
             link_to: "#"
         },
+        {
+            id:7,
+            title:"ریمل حجم دهنده و بلند کننده الیزاماتیک ",
+            image_url: "https://www.rosena.ir/public/files/product/%D8%A2%D8%B1%D8%A7%DB%8C%D8%B4%20%D8%B5%D9%88%D8%B1%D8%AA/%D8%B1%DB%8C%D9%85%D9%84/4238698.jpg",
+            link_to: "#"
+        },
 
     ]
     return (
@@ -61,7 +67,7 @@ function ProductSliderHomeComponent(props){
                            </h3>
                            <div className={`product-slider py-3`}>
                                <Swiper
-                                   // modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                   modules={[Navigation, Pagination, Scrollbar, A11y]}
                                    spaceBetween={50}
                                    slidesPerView={5}
                                    navigation
@@ -70,25 +76,21 @@ function ProductSliderHomeComponent(props){
                                >
                                    {
                                        productSliderList.map(
-                                           item => <SwiperSlide accessKey={item.id}>
-                                               <div>
-                                                   <a href={item.link_to} className={`mb-3 d-block`}>
-                                                       <img src={item.image_url}
-                                                            className={`w-100 d-block m-auto`}
-                                                            alt={item.title}/>
-                                                   </a>
-                                                   <a href={item.link_to}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                                       {item.title}
-                                                   </a>
-                                               </div>
-                                           </SwiperSlide>)
+                                           item => <div className={`col-xs-6`}>
+                                               <SwiperSlide accessKey={item.id}>
+                                                   <div>
+                                                       <a href={item.link_to} className={`mb-3 d-block`}>
+                                                           <img src={item.image_url}
+                                                                className={`w-100 d-block m-auto`}
+                                                                alt={item.title}/>
+                                                       </a>
+                                                       <a href={item.link_to}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
+                                                           {item.title}
+                                                       </a>
+                                                   </div>
+                                               </SwiperSlide>
+                                           </div>)
 
-                                       // productSliderList.map(
-                                       //     item => <ProductSliderHomeComponentItem
-                                       //         key={item.id}
-                                       //         imageUrl={item.image_url}
-                                       //         title={item.title}
-                                       //         linkTo={item.link_to}/>)
                                    }
                                </Swiper>
                            </div>
@@ -100,20 +102,4 @@ function ProductSliderHomeComponent(props){
     )
 }
 
-function ProductSliderHomeComponentItem(props){
-    return (
-        <SwiperSlide accessKey={props.key}>
-            <div>
-                <a href={props.linkTo} className={`mb-3 d-block`}>
-                    <img src={props.imageUrl}
-                         className={`w-100 d-block m-auto`}
-                         alt={props.title}/>
-                </a>
-                <a href={props.linkTo}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                    {props.title}
-                </a>
-            </div>
-        </SwiperSlide>
-    )
-}
 export default ProductSliderHomeComponent;
