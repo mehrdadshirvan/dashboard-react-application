@@ -7,6 +7,45 @@ import 'swiper/modules/pagination/pagination.min.css'
 
 function ProductSliderHomeComponent(props){
 
+    let productSliderList = [
+        {
+            id:1,
+            title:"ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر",
+            image_url: "https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg",
+            link_to: "#"
+        },
+        {
+            id:2,
+            title:"ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر",
+            image_url: "https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-normal.jpg",
+            link_to: "#"
+        },
+        {
+            id:3,
+            title:"تونر پاک کننده الارو مدل Fresh Balancing مناسب پوست چرب حجم 200 میلی لیتر",
+            image_url: "https://www.rosena.ir/public/files/product/pro-brands/ellaro/e55555_1e1729c2a0909e30f07529c5bc206820.jpg",
+            link_to: "#"
+        },
+        {
+            id:6,
+            title:"تونر پاک کننده الارو مدل Fresh Balancing مناسب پوست چرب حجم 200 میلی لیتر",
+            image_url: "https://www.rosena.ir/public/files/product/pro-brands/ellaro/e55555_1e1729c2a0909e30f07529c5bc206820.jpg",
+            link_to: "#"
+        },
+        {
+            id:4,
+            title:"کرم پودر مایع گریم گیاهی مروان خیر هلویی روشن شماره 303 حجم 80 میلی لیتر",
+            image_url: "https://www.rosena.ir/public/files/product/%DA%A9%D8%B1%D9%85%20%D9%BE%D9%88%D8%AF%D8%B1/marvankhair-cream-gream-80ml-code303.jpg",
+            link_to: "#"
+        },
+        {
+            id:5,
+            title:"ریمل حجم دهنده و بلند کننده الیزاماتیک مدل Valume & Long Lashes",
+            image_url: "https://www.rosena.ir/public/files/product/%D8%A2%D8%B1%D8%A7%DB%8C%D8%B4%20%D8%B5%D9%88%D8%B1%D8%AA/%D8%B1%DB%8C%D9%85%D9%84/4238698.jpg",
+            link_to: "#"
+        },
+
+    ]
     return (
             <div className='container'>
                 <div className={`row`}>
@@ -20,172 +59,37 @@ function ProductSliderHomeComponent(props){
                                 </span>
                                </a>
                            </h3>
-                           <div className={`product-slider`}>
+                           <div className={`product-slider py-3`}>
                                <Swiper
-                                   modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                   // modules={[Navigation, Pagination, Scrollbar, A11y]}
                                    spaceBetween={50}
                                    slidesPerView={5}
                                    navigation
                                    onSlideChange={() => console.log('slide change')}
                                    onSwiper={(swiper) => console.log(swiper)}
                                >
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                               className={`w-100 d-block m-auto`}
-                                               alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
-                                   <SwiperSlide>
-                                       <div>
-                                           <a href={`#`} className={`mb-3 d-block`}>
-                                               <img src="https://www.rosena.ir/public/files/product/pro-brands/comeon/comon-face-wash-dry.jpg"
-                                                    className={`w-100 d-block m-auto`}
-                                                    alt="product-50"/>
-                                           </a>
-                                           <a href={`#`}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
-                                               ژل شستشو صورت ( فیس واش ) کامان مدل Dry مناسب پوست خشک حجم 500 میلی لیتر
-                                           </a>
-                                       </div>
-                                   </SwiperSlide>
+                                   {
+                                       productSliderList.map(
+                                           item => <SwiperSlide accessKey={item.id}>
+                                               <div>
+                                                   <a href={item.link_to} className={`mb-3 d-block`}>
+                                                       <img src={item.image_url}
+                                                            className={`w-100 d-block m-auto`}
+                                                            alt={item.title}/>
+                                                   </a>
+                                                   <a href={item.link_to}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
+                                                       {item.title}
+                                                   </a>
+                                               </div>
+                                           </SwiperSlide>)
 
+                                       // productSliderList.map(
+                                       //     item => <ProductSliderHomeComponentItem
+                                       //         key={item.id}
+                                       //         imageUrl={item.image_url}
+                                       //         title={item.title}
+                                       //         linkTo={item.link_to}/>)
+                                   }
                                </Swiper>
                            </div>
                        </div>
@@ -197,10 +101,19 @@ function ProductSliderHomeComponent(props){
 }
 
 function ProductSliderHomeComponentItem(props){
-    // return div{
-    //     for(var i =0; i < 20;i++){
-    //
-    //     }
-    // }
+    return (
+        <SwiperSlide accessKey={props.key}>
+            <div>
+                <a href={props.linkTo} className={`mb-3 d-block`}>
+                    <img src={props.imageUrl}
+                         className={`w-100 d-block m-auto`}
+                         alt={props.title}/>
+                </a>
+                <a href={props.linkTo}  className={`text-decoration-none d-block text-right font-12 text-secondary `}>
+                    {props.title}
+                </a>
+            </div>
+        </SwiperSlide>
+    )
 }
 export default ProductSliderHomeComponent;
