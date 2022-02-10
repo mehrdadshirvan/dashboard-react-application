@@ -2,13 +2,14 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-    baseURL : 'http://127.0.0.1:8000/api/v1',
+    // baseURL : 'http://127.0.0.1:8000/api/v1',
+    // baseURL : 'https://visapickmap.com/api/v1',
+    baseURL : 'https://www.rosena.ir/api/',
     timeout : 5000
 });
 
 
 instance.interceptors.request.use(function(config) {
-    console.log(config);
     return config;
 } , function(err) {
     // handle error
@@ -19,7 +20,6 @@ instance.interceptors.response.use(function(response) {
     return response;
 },function(err) {
     // System log
-
     return Promise.reject(err);
 })
 

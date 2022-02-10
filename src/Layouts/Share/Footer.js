@@ -10,7 +10,7 @@ class Footer extends React.PureComponent {
                     <div className={`'container`}>
                         <div className={`row`}>
                             <div className={`col-sm-12 m-auto text-center py-4`}>
-                                <img src="https://visapickmap.com/assets/site/images/logo-dark.png" alt="PickMap application" width="300px"/>
+                                <img src="https://www.rosena.ir/public/images/rosena-logo-1001-450px-94px-min.png" alt="PickMap application" width="300px"/>
                                 <p className={`d-block p-2`}>
                                     با استفاده از اپلیکیشن پیک مپ و در کنار تیم حرفه ای ویزاپیک، ویزای سرمایه گزاری استرالیا در دستان شماست.
                                 </p>

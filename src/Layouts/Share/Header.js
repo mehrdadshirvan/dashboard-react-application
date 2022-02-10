@@ -8,9 +8,12 @@ class Header extends React.Component{
             <header>
                 <div className="navbar navbar-dark navbar-expand-md bg-dark shadow-sm">
                     <div className="container d-flex justify-content-between">
-                        <a href="#" className="navbar-brand d-flex align-items-center">
-                            <strong>Dashboard</strong>
-                        </a>
+                        <NavLink  className="navbar-brand d-flex align-items-center" exact to="/">
+                            <img src="https://www.rosena.ir/public/icon/iphone-pwa-icon-180.png"
+                                 width="30px"
+                                 alt=""/>
+                            <span className={`mx-1`}>Rosena.ir</span>
+                        </NavLink>
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
                                 <NavLink className="nav-link" exact to="/">Home</NavLink>

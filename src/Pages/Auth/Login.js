@@ -2,34 +2,33 @@ import React from "react";
 import Connection from './../../Api/Connection';
 
 class Login extends React.Component {
+
     state = {
-        email : '',
+        email: '',
         password: ''
     }
+    api_token;
 
     formHandler(e) {
         e.preventDefault();
         // ajax
-        if(this.state.email.length > 1) {
-            Connection.post(`/user/login`,{
+        if (this.state.email.length > 1) {
+            Connection.post(`/user/login`, {
                 email: this.state.email,
-                password:  this.state.password
+                password: this.state.password
             })
-                .then(response =>  console.log(response))
+                .then(response => {
+                    localStorage.setItem("token", response.data.data.api_token)
+                })
                 .catch(err => console.log(err))
-            //
-            this.setState({ text : '' })
+            this.setState({text: ''})
         }
     }
 
 
-    emailInputHandler = e => this.setState({ email : e.target.value});
-    passwordInputHandler = e => this.setState({ password : e.target.value});
 
-
-
-
-
+    emailInputHandler = e => this.setState({email: e.target.value});
+    passwordInputHandler = e => this.setState({password: e.target.value});
 
     render() {
         return (
@@ -55,7 +54,8 @@ class Login extends React.Component {
                                                    onChange={this.emailInputHandler.bind(this)}/>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                                            <label htmlFor="exampleInputPassword1"
+                                                   className="form-label">Password</label>
                                             <input type="password"
                                                    className="form-control"
                                                    id="password"

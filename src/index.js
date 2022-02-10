@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './Layouts/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import './other.css';
+import './Files/css/other.css';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
