@@ -12,7 +12,7 @@ class Home extends React.Component {
 
                 <CategoryHomeComponent />
 
-                {/*<ProductSliderHomeComponent />*/}
+                <ProductSliderHomeComponent />
                 <div className={`container-fluid`}>
                     <div className={`row`}>
                         <div className={`col-sm-6 m-auto`}>
